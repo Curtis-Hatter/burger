@@ -19,8 +19,12 @@ const orm = {
             cb(res);
         });
     },
-    updateOne() {
-        console.log("Update goes code here");
+    updateOne(table, id, valuePassed, cb) {
+        // console.log("Update goes code here");
+        connection.query("UPDATE ?? SET devoured = ? WHERE id = ?", [table, valuePassed, id], (err, res) => {
+            if (err) throw err;
+            cb(res);
+        })
     }
 }
 

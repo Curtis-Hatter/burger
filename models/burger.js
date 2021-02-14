@@ -9,9 +9,9 @@ const burger = {
         //INSERT A BURGER
         orm.insertOne("burgers", column, valuePassed, (res) => cb(res));
     },
-    update() {
+    update(id, isDevoured, cb) {
         //UPDATE A BURGER
-        orm.updateOne(/*PARAMETERS HERE*/);
+        orm.updateOne("burgers", id, isDevoured, (res) => cb(res));
     }
 };
 
