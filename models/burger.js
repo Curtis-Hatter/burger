@@ -2,12 +2,12 @@ const orm = require("../config/orm");
 
 const burger = {
     //SELECTS ALL BURGERS
-    all() {
-        orm.selectAll(/*PARAMETERS HERE*/);
+    all(cb) {
+        orm.selectAll("burgers", (res) => cb(res));
     },
-    create() {
+    create(column, valuePassed, cb) {
         //INSERT A BURGER
-        orm.insertOne(/*PARAMETERS HERE*/);
+        orm.insertOne("burgers", column, valuePassed, (res) => cb(res));
     },
     update() {
         //UPDATE A BURGER
