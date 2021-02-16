@@ -1,3 +1,118 @@
 * {
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: violet;
+    }
+    15% {
+        background-color: indigo;
+    }
+    30% {
+        background-color: blue;
+    }
+    45% {
+        background-color: green;
+    }
+    60% {
+        background-color: yellow;
+    }
+    75% {
+        background-color: orange;
+    }
+    90% {
+        background-color: red;
+    }
+    100% {
+        background-color: violet;
+    }
+}
+
+.rainbow-text {
+    /* background-size: 1800% 1800%; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 10px;
+    font-weight: 900;
+    font-size: 120px;
+    animation-name: rainbow;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+body {
+    background-color: coral;
+}
+
+h2 {
+    font-size: 60px;
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+h4 {
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: 1.5px;
+}
+
+p {
+    /* border: rgba(255, 99, 71, 0.452);
+    border-style: solid; */
+    font-size: large;
+    font-weight: bolder;
+    margin: 1.2em;
+    padding: .2em;
+}
+
+.devoured {
+    text-decoration: line-through;
+    text-decoration-thickness: 2.5px;
+}
+
+#burger {
+    /* border: rgba(255, 99, 71, 0.452); */
+    /* border: tomato; */
+    /* border-style: solid; */
+    padding: 20px;
+}
+
+label {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-weight: 900;
+    animation-name: rainbow;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+input {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black;
+}
+
+button {
+    font-weight: bolder;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: rainbow;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }

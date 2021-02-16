@@ -55,9 +55,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     location.reload("/");
                 } else {
                     alert("Something Went Wrong!");
-                }
+                };
             });
 
-        }
+        };
     });
 });

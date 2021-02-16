@@ -24,8 +24,8 @@ const orm = {
         connection.query("UPDATE ?? SET devoured = ? WHERE id = ?", [table, valuePassed, id], (err, res) => {
             if (err) throw err;
             cb(res);
-        })
-    }
+        });
+    },
 }
 
 module.exports = orm;
