@@ -1,5 +1,4 @@
 const orm = require("../config/orm");
-
 const burger = {
     //SELECTS ALL BURGERS
     all(cb) {
@@ -14,5 +13,4 @@ const burger = {
         orm.updateOne("burgers", id, isDevoured, (res) => cb(res));
     }
 };
-
 module.exports = burger;

@@ -2,19 +2,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (event) {
         console.info('DOM loaded');
     }
-
     const form = document.getElementById("burger");
-
     form.addEventListener("submit", (event) => {
-        // console.log(event);
+
         const burger = form.elements["burger_name"].value.trim();
         console.log(burger);
         event.preventDefault();
-
         const newBurger = {
             burger_name: burger,
         };
-
         fetch("/api/burgers", {
             method: "POST",
             headers: {
@@ -30,8 +26,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             location.reload();
         });
     });
-
-
     const burgerList = document.getElementById("burgerList");
     burgerList.addEventListener("click", (event) => {
         event.stopPropagation();
@@ -57,7 +51,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     alert("Something Went Wrong!");
                 };
             });
-
         };
     });
 });
